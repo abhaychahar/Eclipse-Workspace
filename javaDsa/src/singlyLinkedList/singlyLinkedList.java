@@ -7,7 +7,6 @@ public class singlyLinkedList {
 	
 	//creation
 	public node createSinglyLinkedList(int nodeValue) {
-		head=new node();
 		node node=new node();
 		node.value=nodeValue;
 		node.next=null;
@@ -25,11 +24,14 @@ public class singlyLinkedList {
 		if(head==null) {
 			createSinglyLinkedList(nodeValue);
 		}
-		else if(nodeLocation==0) {
+		else if(nodeLocation==1) {
 			node.next=head;
 			head=node;
 		}
-		else if(nodeLocation>=size) {
+		else if(nodeLocation<1) {
+			System.out.println("Error: Please enter a location greater than 1");
+		}
+		else if(nodeLocation>size) {
 			tail.next=node;
 			node.next=null;
 			tail=node;
@@ -37,7 +39,7 @@ public class singlyLinkedList {
 		else {
 			int i=0;
 			node temp=head;
-			while(i<nodeLocation-1) {
+			while(i<nodeLocation-2) {
 				temp=temp.next;
 				i++;
 			}
@@ -47,4 +49,121 @@ public class singlyLinkedList {
 		}
 		size++;
 	}
-}
+	
+	//traversal
+	public void traverse() {
+		if(head!=null) {
+			node tempNode=head;
+			for(int i=0; i<size; i++) {
+				System.out.print(tempNode.value);
+				if(i!=size-1) {
+					System.out.print("-->");
+				}
+				tempNode=tempNode.next;
+			}
+			System.out.println();
+		}
+		else {
+			System.out.println("The linked list does not exist");
+		}
+	}
+	
+	//search
+	public void search(int nodeValue) {
+		if(head==null) {
+			System.out.println("The linked list does not exist");
+		}
+		else {
+			node tempNode=head;
+			for(int i=0; i<size; i++) {
+				if(tempNode.value==nodeValue) {
+					System.out.println("The "+nodeValue+" is found at the node "+(i+1));
+					return;
+				}
+				tempNode=tempNode.next;
+			}
+			System.out.println("The "+nodeValue+" was not found in the linked list");
+		}
+	}
+	
+	//deletion of a node (through location)
+	public void deleteNodeAt(int nodeLocation) {
+		if(head==null) {
+			System.out.println("The linked list does not exist");
+		}
+		else {
+			if(nodeLocation<1) {
+				System.out.println("Error: Please enter a location greater than 1");
+			}
+			else if(nodeLocation==1) {
+				size--;
+				if(size==0) {
+					tail=null;
+					head=null;
+				}
+				else {
+					head=head.next;
+				}
+			}
+			else if(nodeLocation==size) {
+				if(size==0) {
+					tail=null;
+					head=null;
+				}
+				else {
+					node tempNode=head;
+					for(int i=0; i<size-1; i++) {
+						if(i<size-2) {
+							tempNode=tempNode.next;
+						}
+						else {
+							tail=tempNode;
+							tempNode.next=null;
+						}
+					}
+				}
+				size--;
+			}
+			else if(nodeLocation>size) {
+				System.out.println("The specified location exceeds the size of the linked list");
+			}
+			else {
+				size--;
+				node tempNode=head;
+				for(int i=0; i<nodeLocation-2; i++) {
+					tempNode=tempNode.next;
+				}
+				tempNode.next=tempNode.next.next;
+			}
+		}
+	}
+	
+	//deletion of entire linked list
+	public void deleteList() {
+		head=null;
+		tail=null;
+		size=0;
+	}
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+
