@@ -6,8 +6,8 @@ public class stackUsingArray {
 	
 	//creation
 	public void createStack(int size) {
-		this.arr=new int[size];
-		this.topIndex=-1;
+		arr=new int[size];
+		topIndex=-1;
 		System.out.println("The stack has been created with size "+size);
 	}
 	
@@ -67,7 +67,7 @@ public class stackUsingArray {
 		}
 	}
 	
-	//deletion
+	//deletion of entire stack
 	public void delete() {
 		arr=null;
 		System.out.println("The stack has been deleted");
