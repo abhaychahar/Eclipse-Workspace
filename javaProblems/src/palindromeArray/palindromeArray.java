@@ -2,6 +2,7 @@ package palindromeArray;
 
 public class palindromeArray {
 	
+	//palindrome check
 	public int isPalindrome(int[] arr) {
 		
 		if(arr.length==0) {

@@ -2,11 +2,22 @@ package rotate2dArray;
 
 public class rotate2dArray {
 	
-	public void rotate(int[][] matrix) {
+	//rotation
+	public int[][] rotate(int[][] matrix) {
         int tempHolder=0;
         int c=0;
         int i=0;
         int j=0;
+        
+        //empty array
+        if(matrix.length==0) {
+        	System.out.println("This matrix is empty");
+        	return matrix;
+        }
+        else if(matrix[0].length==0) {
+        	System.out.println("This matrix contains rows of empty arrays");
+        	return matrix;
+        }
         
         //transpose
         while(i<matrix.length) {
@@ -29,10 +40,25 @@ public class rotate2dArray {
                 matrix[m][matrix[0].length-1-n]=tempHolder;
             }
         }
+        
+        return matrix;
     }
 	
+	//print
 	public void print(int[][] arr) {
-		for(int i=0; i<arr.length; i++) {
+		
+		//empty array
+        if(arr.length==0) {
+        	System.out.println("This matrix is empty");
+        	return;
+        }
+        else if(arr[0].length==0) {
+        	System.out.println("This matrix contains rows of empty arrays");
+        	return;
+        }
+		
+		//print
+        for(int i=0; i<arr.length; i++) {
 			for(int j=0; j<arr.length; j++) {
 				System.out.print(arr[i][j]+" ");
 			}
