@@ -1,6 +1,6 @@
 package queueUsingArray;
 
-public class queueUsingArray {
+public class QueueUsingArray {
 	int arr[];
 	int topOfQueue;
 	int beginningOfQueue;

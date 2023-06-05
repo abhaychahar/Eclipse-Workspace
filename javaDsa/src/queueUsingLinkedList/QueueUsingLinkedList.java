@@ -1,11 +1,11 @@
 package queueUsingLinkedList;
 
-public class queueUsingLinkedList {
-	singlyLinkedList queue;
+public class QueueUsingLinkedList {
+	SinglyLinkedList queue;
 	
 	//creation
 	public void createQueue() {
-		this.queue=new singlyLinkedList();
+		this.queue=new SinglyLinkedList();
 		System.out.println("The queue has been successfully created");
 	}
 	

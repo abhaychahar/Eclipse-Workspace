@@ -1,13 +1,13 @@
-package stackUsingLinkedList;
+package queueUsingLinkedList;
 
-public class singlyLinkedList {
-	public node head;
-	public node tail;
+public class SinglyLinkedList {
+	public Node head;
+	public Node tail;
 	public int size;
 	
 	//creation
-	public node createSinglyLinkedList(int nodeValue) {
-		node node=new node();
+	public Node createSinglyLinkedList(int nodeValue) {
+		Node node=new Node();
 		node.value=nodeValue;
 		node.next=null;
 		head=node;
@@ -18,7 +18,7 @@ public class singlyLinkedList {
 	
 	//insertion
 	public void insert(int nodeValue, int nodeLocation) {
-		node node=new node();
+		Node node=new Node();
 		node.value=nodeValue;
 		
 		if(head==null) {
@@ -38,12 +38,12 @@ public class singlyLinkedList {
 		}
 		else {
 			int i=0;
-			node temp=head;
+			Node temp=head;
 			while(i<nodeLocation-2) {
 				temp=temp.next;
 				i++;
 			}
-			node tempnext=temp.next;
+			Node tempnext=temp.next;
 			temp.next=node;
 			node.next=tempnext;
 		}
@@ -53,7 +53,7 @@ public class singlyLinkedList {
 	//traversal
 	public void traverse() {
 		if(head!=null) {
-			node tempNode=head;
+			Node tempNode=head;
 			for(int i=0; i<size; i++) {
 				System.out.print(tempNode.value);
 				if(i!=size-1) {
@@ -74,7 +74,7 @@ public class singlyLinkedList {
 			System.out.println("The linked list does not exist");
 		}
 		else {
-			node tempNode=head;
+			Node tempNode=head;
 			for(int i=0; i<size; i++) {
 				if(tempNode.value==nodeValue) {
 					System.out.println("The "+nodeValue+" is found at the node "+(i+1));
@@ -111,7 +111,7 @@ public class singlyLinkedList {
 					head=null;
 				}
 				else {
-					node tempNode=head;
+					Node tempNode=head;
 					for(int i=0; i<size-1; i++) {
 						if(i<size-2) {
 							tempNode=tempNode.next;
@@ -129,7 +129,7 @@ public class singlyLinkedList {
 			}
 			else {
 				size--;
-				node tempNode=head;
+				Node tempNode=head;
 				for(int i=0; i<nodeLocation-2; i++) {
 					tempNode=tempNode.next;
 				}

@@ -1,6 +1,6 @@
 package missingElementInArray;
 
-public class missingElementInArray {
+public class MissingElementInArray {
 	
 	//missing element check
 	public int findMissing(int[] arr) {

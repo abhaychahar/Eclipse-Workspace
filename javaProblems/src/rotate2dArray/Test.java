@@ -7,7 +7,7 @@ public class Test {
 		int[][] arr1={{1,2,3},{4,5,6},{7,8,9}};
 		int[][] arr2={{1,2,3,4},{5,6,7,8},{9,10,11,12}};
 		
-		rotate2dArray arr=new rotate2dArray();
+		Rotate2dArray arr=new Rotate2dArray();
 		arr.rotate(arr1);
 		arr.rotate(arr2);
 		

@@ -1,6 +1,6 @@
 package rotate2dArray;
 
-public class rotate2dArray {
+public class Rotate2dArray {
 	
 	//rotation
 	public int[][] rotate(int[][] matrix) {

@@ -1,11 +1,11 @@
 package singleDimensionArray;
 
-public class myArray {
+public class Test {
 
 	public static void main(String[] args) {
 		
 		//creation
-		singleDimensionArray sda=new singleDimensionArray(10);
+		SingleDimensionArray sda=new SingleDimensionArray(10);
 		for(int i=0; i<sda.arr.length; i++) {
 			System.out.print(sda.arr[i]+" ");
 		}

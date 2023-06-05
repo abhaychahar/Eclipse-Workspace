@@ -1,6 +1,6 @@
 package arrayReversal;
 
-public class arrayReversal {
+public class ArrayReversal {
 	
 	//reversal
 	public int[] reverse(int[] arr) {

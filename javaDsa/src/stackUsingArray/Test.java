@@ -1,8 +1,8 @@
 package stackUsingArray;
 
-public class myStack {
+public class Test {
 	public static void main(String[] args) {
-		stackUsingArray mS=new stackUsingArray();
+		StackUsingArray mS=new StackUsingArray();
 		
 		//creation
 		mS.createStack(4);

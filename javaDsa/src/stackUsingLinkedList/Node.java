@@ -1,6 +1,6 @@
 package stackUsingLinkedList;
 
-public class node {
+public class Node {
 	public int value;
-	public node next;
+	public Node next;
 }

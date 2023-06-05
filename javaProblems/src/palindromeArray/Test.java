@@ -10,7 +10,7 @@ public class Test {
 		int[] arr4={1,2,4,4,2,1};
 		int[] arr5={1,2,3,4,2,1};
 		
-		palindromeArray arr=new palindromeArray();
+		PalindromeArray arr=new PalindromeArray();
 		arr.isPalindrome(arr1);
 		arr.isPalindrome(arr2);
 		arr.isPalindrome(arr3);

@@ -11,7 +11,7 @@ public class Test {
 		int[] arr5= {-4,-2,-3,-1,1,4,2,3};
 		int[] arr6= {-3,-1,0,3,1,2};
 	
-		missingElementInArray arr=new missingElementInArray();
+		MissingElementInArray arr=new MissingElementInArray();
 		System.out.println(arr.findMissing(arr1));
 		System.out.println(arr.findMissing(arr2));
 		System.out.println(arr.findMissing(arr3));

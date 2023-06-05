@@ -1,9 +1,9 @@
 package stackUsingLinkedList;
 
-public class myStack {
+public class Test {
 
 	public static void main(String[] args) {
-		stackUsingLinkedList mS=new stackUsingLinkedList();
+		StackUsingLinkedList mS=new StackUsingLinkedList();
 		
 		//creation
 		mS.createStack();

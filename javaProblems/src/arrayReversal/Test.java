@@ -8,7 +8,7 @@ public class Test {
 		int[] arr2={1,2,3,2,1};
 		int[] arr3={1,2,3,4,5,6};
 		
-		arrayReversal arr=new arrayReversal();
+		ArrayReversal arr=new ArrayReversal();
 		arr.reverse(arr1);
 		arr.print(arr1);
 		

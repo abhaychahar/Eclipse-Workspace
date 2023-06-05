@@ -1,8 +1,8 @@
 package singlyLinkedList;
 
-public class mySLL {
+public class Test {
 	public static void main(String[] args) {
-		singlyLinkedList mySLL=new singlyLinkedList();
+		SinglyLinkedList mySLL=new SinglyLinkedList();
 		mySLL.createSinglyLinkedList(10);
 		System.out.println(mySLL.head.value);
 		

@@ -1,12 +1,12 @@
 package stackUsingLinkedList;
 
-public class stackUsingLinkedList {
+public class StackUsingLinkedList {
 	
-	singlyLinkedList sll;
+	SinglyLinkedList sll;
 	
 	//creation
 	public void createStack() {
-		sll=new singlyLinkedList();
+		sll=new SinglyLinkedList();
 	}
 	
 	//push

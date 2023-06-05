@@ -1,6 +1,6 @@
 package palindromeArray;
 
-public class palindromeArray {
+public class PalindromeArray {
 	
 	//palindrome check
 	public int isPalindrome(int[] arr) {

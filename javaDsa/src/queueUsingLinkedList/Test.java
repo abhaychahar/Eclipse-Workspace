@@ -1,10 +1,10 @@
 package queueUsingLinkedList;
 
-public class myQueue {
+public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		queueUsingLinkedList myQueue=new queueUsingLinkedList();
+		QueueUsingLinkedList myQueue=new QueueUsingLinkedList();
 		
 		//creation
 		myQueue.createQueue();

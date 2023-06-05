@@ -1,6 +1,6 @@
 package stackUsingArray;
 
-public class stackUsingArray {
+public class StackUsingArray {
 	int arr[];
 	int topIndex;
 	

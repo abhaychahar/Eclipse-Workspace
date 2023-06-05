@@ -1,10 +1,10 @@
 package queueUsingArray;
 
-public class myQueue {
+public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		queueUsingArray myQueue=new queueUsingArray();
+		QueueUsingArray myQueue=new QueueUsingArray();
 		
 		//creation
 		myQueue.createQueue(4);
