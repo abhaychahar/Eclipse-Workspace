@@ -14,11 +14,11 @@ public class Test {
 		int[] arr5= {0,1,3,2};
 		
 		//linear search
-		lsrch.linearsearch(arr1, 4);
-		lsrch.linearsearch(arr2, 4);
-		lsrch.linearsearch(arr3, 6);
-		lsrch.linearsearch(arr4, 8);
-		lsrch.linearsearch(arr5, 5);
+		lsrch.linearSearch(arr1, 4);
+		lsrch.linearSearch(arr2, 4);
+		lsrch.linearSearch(arr3, 6);
+		lsrch.linearSearch(arr4, 8);
+		lsrch.linearSearch(arr5, 5);
 		
 	}
 

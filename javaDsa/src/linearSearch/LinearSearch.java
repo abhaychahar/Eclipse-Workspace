@@ -3,7 +3,7 @@ package linearSearch;
 public class LinearSearch {
 	
 	//linear search
-	public int linearsearch(int[] arr, int val) {
+	public int linearSearch(int[] arr, int val) {
 		
 		for(int i=0; i<arr.length; i++) {
 			if(arr[i]==val) {
