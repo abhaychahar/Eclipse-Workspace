@@ -56,6 +56,53 @@ public class Test {
 		System.out.println();
 		System.out.println("---------------");
 		
+		//search
+		btll.search("n5");
+		btll.search("n10");
+		
+		//insertion
+		btll.insert("n9");
+		btll.levelOrder();
+		System.out.println();
+		System.out.println("---------------");
+		btll.insert("n10");
+		btll.levelOrder();
+		System.out.println();
+		System.out.println("---------------");
+		
+		//get the last node with respect to level order traversal
+		System.out.println(btll.findLast().val);
+		
+		//get the last node's parent node with respect to level order traversal
+		System.out.println(btll.findLastNodeParent().val);
+		
+		//deletion of a given node
+		btll.deleteNode("n2");
+		btll.levelOrder();
+		System.out.println();
+		System.out.println("---------------");
+		btll.deleteNode("n10");
+		btll.levelOrder();
+		System.out.println();
+		System.out.println("---------------");
+		
+		//deletion of the entire binary tree
+		btll.deleteBinaryTree();
+		btll.preOrder(n1);
+		System.out.println();
+		System.out.println("---------------");
+		btll.inOrder(n1);
+		System.out.println();
+		System.out.println("---------------");
+		btll.levelOrder();
+		System.out.println();
+		System.out.println("---------------");
+		btll.search("n1");
+		System.out.println(btll.findLast());
+		System.out.println(btll.findLastNodeParent());
+		System.out.println("---------------");
+		btll.deleteNode("n1");
+		
 	}
 }
 
