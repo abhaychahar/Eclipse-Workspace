@@ -137,7 +137,7 @@ public class BinaryTreeUsingLinkedList {
 	}
 	
 	//get the last node with respect to level order traversal
-	public BinaryNode findLast() {
+	private BinaryNode findLast() {
 		if(root==null) {
 			System.out.println("The binary tree does not exist");
 			return null;
@@ -159,14 +159,15 @@ public class BinaryTreeUsingLinkedList {
 	}
 	
 	//get the last node's parent node with respect to level order traversal
-	public BinaryNode findLastNodeParent() {
+	private BinaryNode findLastNodeParent() {
+		if(root==null) {
+			System.out.println("The binary tree does not exist");
+			return null;
+		}
+		
 		BinaryNode lastNode=this.findLast();
 		BinaryNode lastNodeParent=null;
 		BinaryNode currentNode=null;
-		
-		if(lastNode==null) {
-			return null;
-		}
 		
 		Queue<BinaryNode> queue=new LinkedList<BinaryNode>();
 		queue.add(root);
