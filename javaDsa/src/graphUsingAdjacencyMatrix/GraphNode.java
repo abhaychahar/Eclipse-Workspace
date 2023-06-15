@@ -2,10 +2,10 @@ package graphUsingAdjacencyMatrix;
 
 public class GraphNode {
 	public String val;
-	public int index;
 	
-	public GraphNode(String val, int index) {
+	//creation of vertex
+	public GraphNode(String val) {
 		this.val=val;
-		this.index=index;
 	}
+	
 }

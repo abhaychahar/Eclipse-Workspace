@@ -5,6 +5,7 @@ public class BinaryNode {
 	public BinaryNode left;
 	public BinaryNode right;
 	
+	//creation of binary node
 	public BinaryNode() {}
 	public BinaryNode(String val) {
 		this.val=val;

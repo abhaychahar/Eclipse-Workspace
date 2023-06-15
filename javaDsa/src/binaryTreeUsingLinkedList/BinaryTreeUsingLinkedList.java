@@ -39,7 +39,7 @@ public class BinaryTreeUsingLinkedList {
 		inOrder(node.right);
 	}
 	
-	//postorder traversal
+	//post order traversal
 	public void postOrder(BinaryNode node) {
 		if(root==null) {
 			System.out.println("The binary tree does not exist");
@@ -54,7 +54,7 @@ public class BinaryTreeUsingLinkedList {
 		System.out.print(node.val+" ");
 	}
 	
-	//levelorder traversal
+	//level order traversal
 	public void levelOrder() {
 		if(root==null) {
 			System.out.println("The binary tree does not exist");

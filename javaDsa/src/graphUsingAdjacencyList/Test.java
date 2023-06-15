@@ -1,4 +1,4 @@
-package graphUsingAdjacencyMatrix;
+package graphUsingAdjacencyList;
 import java.util.ArrayList;
 
 public class Test {
@@ -16,8 +16,8 @@ public class Test {
 		nodeList.add(new GraphNode("D"));
 		nodeList.add(new GraphNode("E"));
 		
-		//creation of adjacency matrix
-		GraphUsingAdjacencyMatrix graph=new GraphUsingAdjacencyMatrix(nodeList);
+		//creation of adjacency list
+		GraphUsingAdjacencyList graph=new GraphUsingAdjacencyList(nodeList);
 		
 		//creation of edges
 		graph.addUndirectedEdge(0, 1);

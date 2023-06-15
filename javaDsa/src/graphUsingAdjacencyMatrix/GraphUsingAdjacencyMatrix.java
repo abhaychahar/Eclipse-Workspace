@@ -20,16 +20,16 @@ public class GraphUsingAdjacencyMatrix {
 	
 	//print the adjacency matrix
 	public String toString() {
-		StringBuilder s = new StringBuilder();
+		StringBuilder s=new StringBuilder();
 		s.append("   ");
-		for (int i = 0; i < nodeList.size(); i++) {
-			s.append(nodeList.get(i).val + " ");
+		for (int i=0; i<nodeList.size(); i++) {
+			s.append(nodeList.get(i).val+" ");
 		}
 		s.append("\n");
-		for (int i = 0; i < nodeList.size(); i++) {
-			s.append(nodeList.get(i).val + ": ");
-			for (int j : adjacencyMatrix[i]) {
-				s.append((j) + " ");
+		for (int i=0; i<nodeList.size(); i++) {
+			s.append(nodeList.get(i).val +": ");
+			for (int j: adjacencyMatrix[i]) {
+				s.append((j)+" ");
 			}
 			s.append("\n");
 		}

@@ -28,12 +28,12 @@ public class Test {
 		System.out.println();
 		System.out.println("---------------");
 		
-		//postorder traversal
+		//post order traversal
 		btll.postOrder(btll.root);
 		System.out.println();
 		System.out.println("---------------");
 		
-		//levelorder traversal
+		//level order traversal
 		btll.levelOrder();
 		System.out.println();
 		System.out.println("---------------");
