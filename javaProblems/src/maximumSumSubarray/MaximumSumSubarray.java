@@ -1,6 +1,6 @@
-package maximumSumSubarrayOfSizeK;
+package maximumSumSubarray;
 
-public class MaximumSumSubarrayOfSizeK {
+public class MaximumSumSubarray {
 	
 	//calculation of the maximum sum
 	public int calcMax(int[] arr, int k) {
@@ -8,7 +8,10 @@ public class MaximumSumSubarrayOfSizeK {
 			System.out.println("The window size exceeds the array size");
 			return -1;
 		}
-		
+		if(arr.length==0) {
+			System.out.println("The array is empty");
+			return -1;
+		}
 		
 		int i=0;
 		int j=0;
