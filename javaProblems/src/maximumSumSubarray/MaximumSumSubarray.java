@@ -18,6 +18,7 @@ public class MaximumSumSubarray {
 		int sum=0;
 		int max=Integer.MIN_VALUE;
 		
+		//fixed sliding window
 		while(j<arr.length) {
 			sum=sum+arr[j];
 			

@@ -18,6 +18,7 @@ public class FirstNegativeInEverySubarray {
 		int i=0;
 		int j=0;
 		
+		//fixed sliding window
 		while(j<arr.length) {
 			if(arr[j]<0) {
 				queue.add(arr[j]);
