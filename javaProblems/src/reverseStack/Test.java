@@ -1,4 +1,4 @@
-package deleteKthElementFromStack;
+package reverseStack;
 import java.util.Stack;
 
 public class Test {
@@ -18,7 +18,7 @@ public class Test {
 		sol.print(stk1);
 		System.out.println("---------------");
 		
-		sol.print(sol.deleteRecur(stk1, (stk1.size()/2)+1));
+		sol.print(sol.reverse(stk1));
 		
 	}
 

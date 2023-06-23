@@ -1,5 +1,5 @@
 package deleteKthElementFromStack;
-import java.util.*;
+import java.util.Stack;
 
 public class Solution {
 	
@@ -25,4 +25,5 @@ public class Solution {
 		System.out.println();
 	
 	}
+
 }
