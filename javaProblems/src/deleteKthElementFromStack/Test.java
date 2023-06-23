@@ -6,6 +6,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Stack<Integer> stk1=new Stack<Integer>();
+		Stack<Integer> stk2=new Stack<Integer>();
 		
 		stk1.push(1);
 		stk1.push(2);
@@ -19,6 +20,10 @@ public class Test {
 		System.out.println("---------------");
 		
 		sol.print(sol.deleteRecur(stk1, (stk1.size()/2)+1));
+		System.out.println("---------------");
+		
+		sol.print(sol.deleteRecur(stk2, (stk1.size()/2)+1));
+		System.out.println("---------------");
 		
 	}
 

@@ -5,6 +5,11 @@ public class Solution {
 	
 	public Stack<Integer> deleteRecur(Stack<Integer> stk, int k) {
 		
+		if(stk.size()==0) {
+			System.out.println("The stack is empty");
+			return stk;
+		}
+		
 		if(k==1) {
 			stk.pop();
 			return stk;
